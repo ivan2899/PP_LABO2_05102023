@@ -68,9 +68,11 @@ namespace Entidades
         public void ActualizaHistorialDeOperaciones(char operador)
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"El sistema de la calculadora es: {sistema}");
+            /*sb.AppendLine($"El sistema de la calculadora es: {sistema}\n");
             sb.AppendLine($"El valor del primer operando es {primerOperando.Valor} y el del segundo {segundoOperando.Valor}");
-            sb.AppendLine($"El operador es {operador}");
+            sb.AppendLine($"El operador es {operador}");*/
+            sb.Append($"{primerOperando.Valor} + {segundoOperando.Valor} = {resultado.Valor} ");
+            operaciones.Add(sb.ToString()); 
 
             sb.ToString();
         }
